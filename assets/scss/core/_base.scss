@@ -1,0 +1,37 @@
+html {
+  font-family: 'Imprima', -apple-system, 'system-ui', 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  font-size: 62.5%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  overflow-x: hidden;
+  width: 100vw;
+  max-width: 192rem;
+  margin: 0 auto;
+  background: linear-gradient(
+    174.37deg,
+    #dee4ea 35.03%,
+    rgba(238, 192, 198, 0.05) 94.86%
+  );
+
+  @include screen('small') {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+}
