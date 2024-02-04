@@ -1,5 +1,39 @@
 <template>
-  <div class="team"></div>
+  <div class="team">
+    <div class="team__heading">
+      <h1 class="u-font-h1">THE VISTANIUM</h1>
+      <h1 class="u-font-h1">TEAM.</h1>
+    </div>
+    <div class="team__members">
+      <div class="team__member">
+        <p>
+          Fuad Lawal is a seasoned media and tech operator with a decade-long
+          experience in shaping businesses at various levels. Most recently, he
+          served as the Editor in Chief at Big Cabal Media and led the growth
+          and marketing team at Eden Life.
+        </p>
+        <img src="@/assets/images/fuad.jpg" alt="Fuad's picture" />
+      </div>
+      <div class="team__member">
+        <p>
+          Nana-Aisha Salaudeen is an award-winning storyteller with experience
+          in producing content across diverse formats, including audio, text,
+          and videos. She most recently worked as a multi-platform producer at
+          CNN, covering a variety of business, tech, culture, and art stories
+          across over 20 African countries.
+        </p>
+        <img src="@/assets/images/aisha.jpg" alt="Aisha's picture" />
+      </div>
+      <div class="team__member">
+        <p>
+          Ted Oladele was Vice President of Design & product development at
+          Flutterwave where he led a talented team that specialized in Product
+          Design, User Research, Brand, and Marketing Design.
+        </p>
+        <img src="@/assets/images/ted.jpg" alt="Ted's picture" />
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -21,50 +55,44 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.home {
-  margin-top: 20rem;
-
-  &__projects {
-    position: relative;
-    width: 100vw;
-    left: calc(-50vw + 50%);
+.team {
+  &__members {
     margin-top: 5.2rem;
+    display: flex;
   }
 
-  &__project {
-    width: 25%;
-    margin-right: 5rem;
+  &__member {
+    width: 33%;
 
     img {
-      height: 40rem;
-      background: rgb(220, 220, 220);
+      width: 100%;
+      margin-top: 7rem;
+      border-radius: 20px;
+      height: 44rem;
       object-fit: cover;
-      border: 1px solid #000000;
-      border-radius: 30px;
+      object-position: top;
+      align-self: flex-end;
+      justify-self: flex-end;
     }
 
-    .u-font-normal {
-      margin: 3rem 0 1rem;
-    }
-  }
+    &:nth-child(1) {
+      padding-right: 2.4rem;
 
-  &__collaborations {
-    margin-top: 26rem;
-
-    &-subtext {
-      max-width: 90rem;
-      text-align: center;
-      margin: 0 auto;
-    }
-
-    &-brands {
-      display: flex;
-      margin: 7rem auto 0;
-      width: fit-content;
-
-      img:not(:last-child) {
-        margin-right: 5rem;
+      img {
+        align-self: flex-end;
+        justify-self: flex-end;
+        margin-bottom: 0;
       }
+    }
+
+    &:nth-child(2) {
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      padding: 0 2.4rem;
+    }
+
+    &:nth-child(3) {
+      padding-left: 2.4rem;
     }
   }
 }

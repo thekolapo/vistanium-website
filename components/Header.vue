@@ -21,6 +21,7 @@
 .header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20rem;
 
   > * {
     width: 30%;
