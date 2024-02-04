@@ -4,82 +4,88 @@
       <h1 class="u-font-h1">Our</h1>
       <h1 class="u-font-h1">Projects</h1>
     </div>
-    <flickity ref="flickity" class="home__projects" :options="flickityOptions">
-      <a
-        href="https://www.vistanium.com/"
-        target="_blank"
-        class="home__project"
+    <client-only>
+      <flickity
+        ref="flickity"
+        class="home__projects"
+        :options="flickityOptions"
       >
-        <img
-          src="@/assets/images/vistanium-mag-img.jpg"
-          alt="Vistanium mag image"
-        />
-        <p class="u-font-normal">Vistanium Mag</p>
-        <p>
-          Immersive essays that narrate extraordinary true stories. They provide
-          compelling insights into life in various cities, offering readers a
-          rich, multifaceted perspective.
-        </p>
-      </a>
-      <a
-        href="https://twentysevenproductions.co/itoosabi/"
-        target="_blank"
-        class="home__project"
-      >
-        <img src="@/assets/images/i-too-sabi.jpg" alt="I too sabi image" />
-        <p class="u-font-normal">I too sabi</p>
-        <p>
-          A Nigeria-focused conversational "ask me anything" podcast that
-          answers a wide range of questions through research and expert
-          insights.
-        </p>
-      </a>
-      <a
-        href="https://www.sunandcountry.com/"
-        target="_blank"
-        class="home__project"
-      >
-        <img
-          src="@/assets/images/sun-and-country.jpg"
-          alt="Sun and Country image"
-        />
-        <p class="u-font-normal">Sun and Country</p>
-        <p>
-          A story-led guide to understanding the Nigerian Civil War, capturing
-          the events that led to it, how it played out on all sides, and how it
-          continues to shape our world today.
-        </p>
-      </a>
-      <a
-        href="https://twentysevenproductions.co/itoosabi/"
-        target="_blank"
-        class="home__project"
-      >
-        <img src="@/assets/images/i-too-sabi.jpg" alt="I like girls image" />
-        <p class="u-font-normal">I like girls</p>
-        <p>
-          A documentary-style, narrative-driven podcast exploring the diverse
-          stories of African women. It offers firsthand insights into how gender
-          shapes women's lives.
-        </p>
-      </a>
-      <a
-        href="https://www.sunandcountry.com/"
-        target="_blank"
-        class="home__project"
-      >
-        <img
-          src="@/assets/images/sun-and-country.jpg"
-          alt="Sun and Country image"
-        />
-        <p class="u-font-normal">Sun and Country</p>
-        <p>
-          A story-led guide to understanding the Nigerian Civil War, capturing
-          the events that led to it, how it played out on all sides, and how it
-          continues to shape our world today.
-        </p>
-      </a>
-    </flickity>
+        <a
+          href="https://www.vistanium.com/"
+          target="_blank"
+          class="home__project"
+        >
+          <img
+            src="@/assets/images/vistanium-mag-img.jpg"
+            alt="Vistanium mag image"
+          />
+          <p class="u-font-normal">Vistanium Mag</p>
+          <p>
+            Immersive essays that narrate extraordinary true stories. They
+            provide compelling insights into life in various cities, offering
+            readers a rich, multifaceted perspective.
+          </p>
+        </a>
+        <a
+          href="https://twentysevenproductions.co/itoosabi/"
+          target="_blank"
+          class="home__project"
+        >
+          <img src="@/assets/images/i-too-sabi.jpg" alt="I too sabi image" />
+          <p class="u-font-normal">I too sabi</p>
+          <p>
+            A Nigeria-focused conversational "ask me anything" podcast that
+            answers a wide range of questions through research and expert
+            insights.
+          </p>
+        </a>
+        <a
+          href="https://www.sunandcountry.com/"
+          target="_blank"
+          class="home__project"
+        >
+          <img
+            src="@/assets/images/sun-and-country.jpg"
+            alt="Sun and Country image"
+          />
+          <p class="u-font-normal">Sun and Country</p>
+          <p>
+            A story-led guide to understanding the Nigerian Civil War, capturing
+            the events that led to it, how it played out on all sides, and how
+            it continues to shape our world today.
+          </p>
+        </a>
+        <a
+          href="https://twentysevenproductions.co/itoosabi/"
+          target="_blank"
+          class="home__project"
+        >
+          <img src="@/assets/images/i-too-sabi.jpg" alt="I like girls image" />
+          <p class="u-font-normal">I like girls</p>
+          <p>
+            A documentary-style, narrative-driven podcast exploring the diverse
+            stories of African women. It offers firsthand insights into how
+            gender shapes women's lives.
+          </p>
+        </a>
+        <a
+          href="https://www.sunandcountry.com/"
+          target="_blank"
+          class="home__project"
+        >
+          <img
+            src="@/assets/images/sun-and-country.jpg"
+            alt="Sun and Country image"
+          />
+          <p class="u-font-normal">Sun and Country</p>
+          <p>
+            A story-led guide to understanding the Nigerian Civil War, capturing
+            the events that led to it, how it played out on all sides, and how
+            it continues to shape our world today.
+          </p>
+        </a>
+      </flickity>
+    </client-only>
     <div class="home__collaborations">
       <p class="u-font-normal home__collaborations-subtext">
         We collaborate with ambitious brands to advance their business
