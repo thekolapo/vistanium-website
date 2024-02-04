@@ -22,8 +22,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content:
-          'Whether you run a single restaurant, bar, club, cafe, hotel or a chain of venues, enhance your order management and improve your revenue.',
+        content: '',
       },
       { property: 'og:type', content: 'website' },
       { property: 'og:url', content: '' },
@@ -36,8 +35,7 @@ export default {
       {
         hid: 'og:description',
         property: 'og:description',
-        content:
-          'Whether you run a single restaurant, bar, club, cafe, hotel or a chain of venues, enhance your order management and improve your revenue.',
+        content: '',
       },
       { property: 'twitter:card', content: 'summary_large_image' },
       { property: 'twitter:url', content: '' },
@@ -49,8 +47,7 @@ export default {
       {
         hid: 'twitter:description',
         property: 'twitter:description',
-        content:
-          'Whether you run a single restaurant, bar, club, cafe, hotel or a chain of venues, enhance your order management and improve your revenue.',
+        content: '',
       },
       {
         hid: 'twitter:image',
