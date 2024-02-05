@@ -23,12 +23,34 @@
   justify-content: space-between;
   margin-bottom: 20rem;
 
+  @include screen(med) {
+    flex-wrap: wrap;
+
+    p:not(:last-child) {
+      margin-top: 1.6rem;
+    }
+  }
+
+  @include screen(med) {
+    margin-bottom: 10rem;
+  }
+
   > * {
     width: 30%;
+
+    @include screen(med) {
+      width: 100%;
+      order: 2;
+    }
   }
 
   &__links {
     text-align: right;
+
+    @include screen(med) {
+      order: 1;
+      margin-bottom: 2rem;
+    }
 
     a {
       color: #009a46;

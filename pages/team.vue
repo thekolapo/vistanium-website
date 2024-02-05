@@ -59,6 +59,7 @@ export default {
   &__members {
     margin-top: 5.2rem;
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__member {
@@ -73,6 +74,16 @@ export default {
       object-position: top;
       align-self: flex-end;
       justify-self: flex-end;
+
+      @include screen(med) {
+        margin-top: 2rem;
+        height: auto;
+        max-height: 70rem;
+      }
+
+      @include screen(small) {
+        max-height: 36rem;
+      }
     }
 
     &:nth-child(1) {
@@ -93,6 +104,21 @@ export default {
 
     &:nth-child(3) {
       padding-left: 2.4rem;
+    }
+
+    @include screen(med) {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 6rem;
+      }
+
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
+        padding: 0;
+        border: none;
+      }
     }
   }
 }

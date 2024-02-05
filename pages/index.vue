@@ -131,6 +131,10 @@ export default {
     width: 100vw;
     left: calc(-50vw + 50%);
     margin-top: 5.2rem;
+
+    @include screen(med) {
+      margin-top: 4rem;
+    }
   }
 
   &__project {
@@ -139,12 +143,31 @@ export default {
     text-decoration: none;
     color: unset;
 
+    @include screen(med) {
+      width: 40%;
+      margin-right: 4rem;
+    }
+
+    @include screen(small) {
+      width: 70%;
+      margin-right: 3rem;
+    }
+
     img {
+      width: 100%;
       height: 40rem;
       background: rgb(220, 220, 220);
       object-fit: cover;
       border: 1px solid #000000;
       border-radius: 30px;
+
+      @include screen(med) {
+        height: 34rem;
+      }
+
+      @include screen(small) {
+        height: 30rem;
+      }
     }
 
     .u-font-normal {
@@ -155,10 +178,22 @@ export default {
   &__collaborations {
     margin-top: 26rem;
 
+    @include screen(med) {
+      margin-top: 18rem;
+    }
+
+    @include screen(small) {
+      margin-top: 12rem;
+    }
+
     &-subtext {
       max-width: 90rem;
       text-align: center;
       margin: 0 auto;
+
+      @include screen(med) {
+        text-align: left;
+      }
     }
 
     &-brands {
@@ -166,8 +201,23 @@ export default {
       margin: 7rem auto 0;
       width: fit-content;
 
+      @include screen(med) {
+        flex-wrap: wrap;
+        width: auto;
+
+        img {
+          margin-bottom: 2.4rem;
+        }
+      }
+
       img:not(:last-child) {
-        margin-right: 5rem;
+        transform: scale(0.9);
+        margin-right: 3rem;
+
+        @include screen(small) {
+          transform: scale(0.8);
+          margin-right: 0rem;
+        }
       }
     }
   }

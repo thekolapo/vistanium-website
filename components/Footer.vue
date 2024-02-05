@@ -31,6 +31,14 @@
   margin-top: 24rem;
   font-size: 2rem;
 
+  @include screen(med) {
+    margin-top: 16rem;
+  }
+
+  @include screen(small) {
+    margin-top: 11rem;
+  }
+
   a {
     color: black;
   }
@@ -39,6 +47,16 @@
     font-size: 3.6rem;
     line-height: 4rem;
     max-width: 144rem;
+
+    @include screen(med) {
+      font-size: 3rem;
+      line-height: 3.4rem;
+    }
+
+    @include screen(small) {
+      font-size: 2.6rem;
+      line-height: 3.2rem;
+    }
   }
 
   &__bottom {
@@ -47,6 +65,10 @@
     padding-top: 4rem;
     display: flex;
     align-items: center;
+
+    @include screen(small) {
+      flex-wrap: wrap;
+    }
 
     &::before {
       content: '';
@@ -61,6 +83,7 @@
 
   &__copyright {
     width: 50%;
+    margin-right: 5rem;
 
     img {
       margin-bottom: 2rem;
@@ -70,6 +93,12 @@
   &__social-links {
     display: flex;
     flex-direction: column;
+    margin-right: 5rem;
+
+    @include screen(small) {
+      margin-right: 0;
+      margin-left: auto;
+    }
 
     a:not(:last-child) {
       margin-bottom: 1rem;
@@ -81,12 +110,22 @@
     width: 100%;
     max-width: 54rem;
 
+    @include screen(small) {
+      max-width: unset;
+      width: 100%;
+      margin-top: 4rem;
+    }
+
     &-form {
       border: 1px solid #1e1e1e;
       border-radius: 10px;
       padding: 1.6rem 2rem;
       background: white;
       margin-top: 1rem;
+
+      @include screen(small) {
+        padding: 1.4rem 1.2rem;
+      }
 
       input,
       button {
@@ -97,6 +136,14 @@
       input {
         width: 77%;
         font-size: 1.8rem;
+
+        @include screen(small) {
+          width: 70%;
+        }
+
+        @media screen and (max-width: 480px) {
+          width: 64%;
+        }
       }
 
       button {

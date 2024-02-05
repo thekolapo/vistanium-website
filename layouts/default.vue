@@ -13,8 +13,7 @@
   padding: 4.3rem 5rem;
 
   @include screen('small') {
-    padding-top: 3.2rem;
-    padding-bottom: 3.6rem;
+    padding: 3.6rem 2.5rem;
   }
 }
 </style>
