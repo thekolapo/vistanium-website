@@ -13,7 +13,7 @@
         <a
           href="https://www.vistanium.com/"
           target="_blank"
-          class="home__project"
+          class="home__project home__project--vistanium"
         >
           <img
             src="@/assets/images/vistanium-mag-img.jpg"
@@ -42,10 +42,10 @@
         <a
           href="https://www.sunandcountry.com/"
           target="_blank"
-          class="home__project"
+          class="home__project home__project--sun-country"
         >
           <img
-            src="@/assets/images/sun-and-country.jpg"
+            src="@/assets/images/sun-and-country.svg"
             alt="Sun and Country image"
           />
           <p class="u-font-normal">Sun and Country</p>
@@ -56,11 +56,14 @@
           </p>
         </a>
         <a
-          href="https://twentysevenproductions.co/itoosabi/"
+          href="https://podcasts.apple.com/za/podcast/i-like-girls/id1572625602/"
           target="_blank"
-          class="home__project"
+          class="home__project home__project--i-like-girls"
         >
-          <img src="@/assets/images/i-too-sabi.jpg" alt="I like girls image" />
+          <img
+            src="@/assets/images/i-like-girls.png"
+            alt="I like girls image"
+          />
           <p class="u-font-normal">I like girls</p>
           <p>
             A documentary-style, narrative-driven podcast exploring the diverse
@@ -69,19 +72,19 @@
           </p>
         </a>
         <a
-          href="https://www.sunandcountry.com/"
+          href="https://hundredgood.com/"
           target="_blank"
           class="home__project"
         >
           <img
-            src="@/assets/images/sun-and-country.jpg"
+            src="@/assets/images/hundred-good.png"
             alt="Sun and Country image"
           />
-          <p class="u-font-normal">Sun and Country</p>
+          <p class="u-font-normal">HundredGood</p>
           <p>
-            A story-led guide to understanding the Nigerian Civil War, capturing
-            the events that led to it, how it played out on all sides, and how
-            it continues to shape our world today.
+            An annual curation of 100 good things that have happened across
+            Africa. Every December, it offers a hopeful outlook on a continent
+            riddled with a singular narrative of negativity.
           </p>
         </a>
       </flickity>
@@ -159,7 +162,7 @@ export default {
       background: rgb(220, 220, 220);
       object-fit: cover;
       border: 1px solid #000000;
-      border-radius: 30px;
+      border-radius: 100px;
 
       @include screen(med) {
         height: 34rem;
@@ -172,6 +175,18 @@ export default {
 
     .u-font-normal {
       margin: 3rem 0 1rem;
+    }
+
+    &--sun-country {
+      img {
+        padding: 6rem 4.8rem;
+        border-radius: 100%;
+        background: white;
+      }
+    }
+
+    &--vistanium img {
+      border-radius: 30px;
     }
   }
 
