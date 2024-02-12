@@ -8,12 +8,14 @@
     <div class="footer__bottom">
       <div class="footer__copyright">
         <img src="@/assets/images/vistanium.svg" alt="vistanium logo" />
-        <p>Vistanium © 2024</p>
+        <p>Vistanium {{ new Date().getFullYear() }}</p>
       </div>
       <div class="footer__social-links">
-        <a href="" target="_blank">Youtube</a>
-        <a href="" target="_blank">Instagram</a>
-        <a href="" target="_blank">Twitter</a>
+        <a href="https://www.youtube.com/@Vistanium" target="_blank">Youtube</a>
+        <a href="https://www.instagram.com/vistanium" target="_blank">
+          Instagram
+        </a>
+        <a href="https://twitter.com/Vistanium" target="_blank">Twitter</a>
       </div>
       <div class="footer__subscribe">
         <p>Stay up to date with our projects and stories</p>
