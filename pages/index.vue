@@ -27,7 +27,7 @@
           </p>
         </a>
         <a
-          href="https://twentysevenproductions.co/itoosabi/"
+          href="https://podcasts.apple.com/us/podcast/i-too-sabi/id1653930660"
           target="_blank"
           class="home__project"
         >
@@ -141,36 +141,29 @@ export default {
   }
 
   &__project {
-    width: 25%;
+    --size: 25vw;
+    width: var(--size);
     margin-right: 5rem;
     text-decoration: none;
     color: unset;
 
     @include screen(med) {
-      width: 40%;
+      --size: 40vw;
       margin-right: 4rem;
     }
 
     @include screen(small) {
-      width: 70%;
+      --size: 70vw;
       margin-right: 3rem;
     }
 
     img {
-      width: 100%;
-      height: 40rem;
+      width: var(--size);
+      height: var(--size);
       background: rgb(220, 220, 220);
       object-fit: cover;
       border: 1px solid #000000;
       border-radius: 100px;
-
-      @include screen(med) {
-        height: 34rem;
-      }
-
-      @include screen(small) {
-        height: 30rem;
-      }
     }
 
     .u-font-normal {
