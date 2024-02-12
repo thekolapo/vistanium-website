@@ -54,7 +54,7 @@ export default {
       {
         hid: 'twitter:image',
         property: 'twitter:image',
-        content: 'https://vistanium.xyzp/meta-image.jpeg',
+        content: 'https://vistanium.xyz/meta-image.jpeg',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
