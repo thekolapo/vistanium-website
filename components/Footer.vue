@@ -142,12 +142,13 @@
         }
 
         @media screen and (max-width: 480px) {
-          width: 64%;
+          width: 62%;
         }
       }
 
       button {
         text-transform: uppercase;
+        color: black;
       }
     }
   }
