@@ -31,7 +31,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://vistanium.xyzp/meta-image.jpeg',
+        content: 'https://vistanium.xyz/meta-image.jpeg',
       },
       {
         hid: 'og:description',
