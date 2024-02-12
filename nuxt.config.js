@@ -23,7 +23,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'We’re a creative powerhouse at the intersection of media and technology. We craft compelling stories and products that resonate with audiences and drive action. ver excellence.',
+          'We’re a creative powerhouse at the intersection of media and technology.',
       },
       { property: 'og:type', content: 'website' },
       { property: 'og:url', content: '' },
@@ -37,7 +37,7 @@ export default {
         hid: 'og:description',
         property: 'og:description',
         content:
-          'We’re a creative powerhouse at the intersection of media and technology. We craft compelling stories and products that resonate with audiences and drive action. ver excellence.',
+          'We’re a creative powerhouse at the intersection of media and technology.',
       },
       { property: 'twitter:card', content: 'summary_large_image' },
       { property: 'twitter:url', content: '' },
@@ -49,7 +49,8 @@ export default {
       {
         hid: 'twitter:description',
         property: 'twitter:description',
-        content: '',
+        content:
+          'We’re a creative powerhouse at the intersection of media and technology.',
       },
       {
         hid: 'twitter:image',
