@@ -6,7 +6,7 @@
     </div>
     <div class="team__members">
       <div class="team__member">
-        <p>
+        <p class="team__member-about">
           Fuad Lawal is a seasoned media and tech operator with a decade-long
           experience in shaping businesses at various levels. Most recently, he
           served as the Editor in Chief at Big Cabal Media and led the growth
@@ -15,7 +15,7 @@
         <img src="@/assets/images/fuad.jpg" alt="Fuad's picture" />
       </div>
       <div class="team__member">
-        <p>
+        <p class="team__member-about">
           Nana-Aisha Salaudeen is an award-winning storyteller with experience
           in producing content across diverse formats, including audio, text,
           and videos. She most recently worked as a multi-platform producer at
@@ -25,7 +25,7 @@
         <img src="@/assets/images/aisha.jpg" alt="Aisha's picture" />
       </div>
       <div class="team__member">
-        <p>
+        <p class="team__member-about">
           Ted Oladele was Vice President of Design & product development at
           Flutterwave where he led a talented team that specialized in Product
           Design, User Research, Brand, and Marketing Design.
@@ -63,7 +63,17 @@ export default {
   }
 
   &__member {
+    display: flex;
+    flex-direction: column;
     width: 33%;
+
+    &-about {
+      margin-bottom: 3rem;
+
+      @include screen(med) {
+        margin-bottom: unset;
+      }
+    }
 
     img {
       width: 100%;
@@ -72,8 +82,7 @@ export default {
       height: 44rem;
       object-fit: cover;
       object-position: top;
-      align-self: flex-end;
-      justify-self: flex-end;
+      margin-top: auto;
 
       @include screen(med) {
         margin-top: 2rem;
