@@ -17,12 +17,13 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         name: 'keywords',
-        content: 'Vistanium, fuad',
+        content: 'Vistanium',
       },
       {
         hid: 'description',
         name: 'description',
-        content: '',
+        content:
+          'We’re a creative powerhouse at the intersection of media and technology. We craft compelling stories and products that resonate with audiences and drive action. ver excellence.',
       },
       { property: 'og:type', content: 'website' },
       { property: 'og:url', content: '' },
@@ -30,12 +31,13 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        // content: 'https://design-capital-site.netlify.app/meta-image.png',
+        content: 'https://vistanium.xyzp/meta-image.jpeg',
       },
       {
         hid: 'og:description',
         property: 'og:description',
-        content: '',
+        content:
+          'We’re a creative powerhouse at the intersection of media and technology. We craft compelling stories and products that resonate with audiences and drive action. ver excellence.',
       },
       { property: 'twitter:card', content: 'summary_large_image' },
       { property: 'twitter:url', content: '' },
@@ -52,7 +54,7 @@ export default {
       {
         hid: 'twitter:image',
         property: 'twitter:image',
-        // content: 'https://design-capital-site.netlify.app/meta-image.png',
+        content: 'https://vistanium.xyzp/meta-image.jpeg',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
