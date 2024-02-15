@@ -3,7 +3,9 @@
     <p class="footer__partnership-text">
       For collaboration or partnership discussions, please reach out via email
       to
-      <a href="mailto:team@vistanium.xyz" target="_blank">team@vistanium.xyz</a>
+      <a href="mailto:hello@vistanium.com" target="_blank">
+        hello@vistanium.com
+      </a>
     </p>
     <div class="footer__bottom">
       <div class="footer__copyright">

@@ -3,7 +3,7 @@
     <p>
       We’re a creative powerhouse at the intersection of media and technology.
       We craft compelling stories and products that resonate with audiences and
-      drive action. ver excellence.
+      drive action.
     </p>
     <p>
       We excel in bringing ambitious visions to life with our creative
