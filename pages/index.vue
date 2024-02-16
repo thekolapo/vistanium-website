@@ -1,8 +1,40 @@
 <template>
   <div class="home">
-    <div class="home__heading">
-      <h1 class="u-font-h1">Our</h1>
-      <h1 class="u-font-h1">Projects</h1>
+    <div class="home__header">
+      <div class="home__header-heading">
+        <h1 class="u-font-h1">Our</h1>
+        <h1 class="u-font-h1">Projects</h1>
+      </div>
+      <div class="home__header-nav">
+        <button
+          @click="
+            () => {
+              $refs.flickity.stopPlayer()
+              $refs.flickity.previous()
+            }
+          "
+        >
+          <!--prettier-ignore-->
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25" cy="25" r="24.5" stroke="black"/>
+            <path d="M34 25H16M16 25L23 18M16 25L23 32" stroke="black" stroke-opacity="0.95" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button
+          @click="
+            () => {
+              $refs.flickity.stopPlayer()
+              $refs.flickity.next()
+            }
+          "
+        >
+          <!--prettier-ignore-->
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25" cy="25" r="24.5" transform="rotate(180 25 25)" stroke="black"/>
+            <path d="M16 25H34M34 25L27 32M34 25L27 18" stroke="black" stroke-opacity="0.95" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
     </div>
     <client-only>
       <flickity
@@ -129,6 +161,27 @@ export default {
 
 <style lang="scss" scoped>
 .home {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-nav {
+      button {
+        background: transparent;
+        border: none;
+
+        &:not(:last-child) {
+          margin-right: 1.3rem;
+        }
+      }
+
+      @include screen(small) {
+        display: none;
+      }
+    }
+  }
+
   &__projects {
     position: relative;
     width: 100vw;
