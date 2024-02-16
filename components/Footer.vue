@@ -21,10 +21,23 @@
       </div>
       <div class="footer__subscribe">
         <p>Stay up to date with our projects and stories</p>
-        <div class="footer__subscribe-form">
-          <input type="email" />
+        <form
+          id="mc-embedded-subscribe-form"
+          action="https://gmail.us14.list-manage.com/subscribe/post?u=c5e7be0fab293c70ce7928551&amp;id=5fb28450d7&amp;f_id=006188e0f0"
+          method="post"
+          name="mc-embedded-subscribe-form"
+          validate
+          class="footer__subscribe-form"
+        >
+          <input
+            id="mce-EMAIL"
+            name="EMAIL"
+            type="email"
+            required
+            placeholder="Enter your email"
+          />
           <button type="submit">Subscribe</button>
-        </div>
+        </form>
       </div>
     </div>
   </footer>
@@ -126,9 +139,10 @@
       padding: 1.6rem 2rem;
       background: white;
       margin-top: 1rem;
+      display: flex;
 
       @include screen(small) {
-        padding: 1.4rem 1.2rem;
+        padding: 1.4rem 0.8rem;
       }
 
       input,
@@ -138,21 +152,14 @@
       }
 
       input {
-        width: 77%;
+        width: 100%;
         font-size: 1.8rem;
-
-        @include screen(small) {
-          width: 70%;
-        }
-
-        @media screen and (max-width: 480px) {
-          width: 62%;
-        }
       }
 
       button {
         text-transform: uppercase;
         color: black;
+        margin-left: 1rem;
       }
     }
   }
